@@ -1,5 +1,4 @@
-vim.pack.add({
-    { src = "https://github.com/lewis6991/gitsigns.nvim" },
+vim.pack.add({ { src = "https://github.com/lewis6991/gitsigns.nvim" },
 })
 require('gitsigns').setup({ signcolumn = false })
 
@@ -26,8 +25,8 @@ require('blink.cmp').setup({
         ["<C-j>"] = { "select_next", "fallback" },
         ["<C-b>"] = { "scroll_documentation_down", "fallback" },
         ["<C-f>"] = { "scroll_documentation_up", "fallback" },
-        ["<C-l>"] = { "snippet_forward", "fallback" },
-        ["<C-h>"] = { "snippet_backward", "fallback" },
+        ["<A-l>"] = { "snippet_forward", "fallback" },
+        ["<A-h>"] = { "snippet_backward", "fallback" },
         -- ["<C-e>"] = { "hide" },
     },
 
@@ -55,9 +54,10 @@ require('blink.cmp').setup({
 
 -- colorscheme
 vim.pack.add({
-    { src = "https://github.com/mcauley-penney/techbase.nvim" },
+    { src = "https://github.com/GillisC/cynosure.nvim" },
 })
-require("techbase").setup({})
+require("cynosure").setup({})
+
 
 vim.pack.add({
     { src = "https://github.com/ibhagwan/fzf-lua" },

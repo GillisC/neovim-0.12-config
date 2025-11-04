@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("techbase")
+vim.cmd.colorscheme("cynosure")

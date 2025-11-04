@@ -1,7 +1,8 @@
 vim.lsp.enable({
-  "bashls",
-  "lua_ls",
-  "ts_ls",
-  "rust-analyzer",
+    "clangd",
+    "bashls",
+    "lua_ls",
+    "ts_ls",
+    "rust-analyzer",
 })
 vim.diagnostic.config({ virtual_text = true })
