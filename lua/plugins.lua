@@ -93,3 +93,9 @@ vim.pack.add({
     { src = "https://github.com/numToStr/Comment.nvim" }
 })
 
+vim.pack.add({
+    { src = "https://github.com/akinsho/git-conflict.nvim" }
+})
+require("git-conflict").setup()
+
+
