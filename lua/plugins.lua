@@ -56,7 +56,6 @@ require('blink.cmp').setup({
 vim.pack.add({
     { src = "https://github.com/GillisC/cynosure.nvim" },
 })
-require("cynosure").setup({})
 
 
 vim.pack.add({
@@ -89,3 +88,8 @@ require('fzf-lua').setup({
         }
     }
 })
+
+vim.pack.add({
+    { src = "https://github.com/numToStr/Comment.nvim" }
+})
+

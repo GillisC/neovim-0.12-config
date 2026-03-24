@@ -1,0 +1,46 @@
+{
+  "plugins": {
+    "Comment.nvim": {
+      "rev": "e30b7f2",
+      "src": "https://github.com/numToStr/Comment.nvim"
+    },
+    "base16.nvim": {
+      "rev": "261b25c",
+      "src": "https://github.com/Soares/base16.nvim"
+    },
+    "blink.cmp": {
+      "rev": "327fff9",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "1.0.0 - 2.0.0"
+    },
+    "colorbuddy.nvim": {
+      "rev": "8b96858",
+      "src": "https://github.com/tjdevries/colorbuddy.nvim"
+    },
+    "cynosure.nvim": [],
+    "fzf-lua": {
+      "rev": "a8458b7",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "gitsigns.nvim": {
+      "rev": "20ad441",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "mason.nvim": {
+      "rev": "ad7146a",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "presence.nvim": {
+      "rev": "87c857a",
+      "src": "https://github.com/andweeb/presence.nvim"
+    },
+    "sitrusbuddy.nvim": {
+      "rev": "e4b2ae5",
+      "src": "https://github.com/wesleimp/sitrusbuddy.nvim"
+    },
+    "techbase.nvim": {
+      "rev": "3c908d8",
+      "src": "https://github.com/mcauley-penney/techbase.nvim"
+    }
+  }
+}

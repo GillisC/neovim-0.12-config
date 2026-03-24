@@ -1,1 +1,2 @@
-vim.cmd.colorscheme("cynosure")
+vim.cmd("colorscheme cynosure-dark")
+
