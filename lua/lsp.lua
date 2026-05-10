@@ -4,6 +4,7 @@ local lsps = {
     { "lua_ls" },
     { "rust-analyzer" },
     { "neocmakelsp" },
+    { "csharp-ls"},
 }
 
 -- Setup neocmake

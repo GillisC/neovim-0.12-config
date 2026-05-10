@@ -9,7 +9,10 @@
       "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
-    "cynosure.nvim": [],
+    "cynosure.nvim": {
+      "rev": "29d7437ae2226a4d6131efb901b0b7e949debba0",
+      "src": "https://github.com/GillisC/cynosure.nvim"
+    },
     "fzf-lua": {
       "rev": "a8458b7",
       "src": "https://github.com/ibhagwan/fzf-lua"
