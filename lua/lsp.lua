@@ -6,6 +6,7 @@ local lsps = {
     { "neocmakelsp" },
     { "csharp-ls"},
     { "python-lsp-server" },
+    { "r_language_server" },
 }
 
 -- Setup neocmake

@@ -98,4 +98,9 @@ vim.pack.add({
 })
 require("git-conflict").setup()
 
+vim.pack.add({
+    { src = "https://github.com/R-nvim/R.nvim" }
+})
+require("r").setup()
+
 
