@@ -1,7 +1,6 @@
 local opt = vim.opt
 
 opt.guicursor = "i:block"
-opt.colorcolumn = "80"
 opt.signcolumn = "yes:1"
 opt.termguicolors = true
 opt.ignorecase = true

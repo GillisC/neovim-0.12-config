@@ -5,6 +5,7 @@ local lsps = {
     { "rust-analyzer" },
     { "neocmakelsp" },
     { "csharp-ls"},
+    { "python-lsp-server" },
 }
 
 -- Setup neocmake
