@@ -28,6 +28,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 keymap("n", "<leader>cd", '<cmd>lua vim.fn.chdir(vim.fn.expand("%:p:h"))<CR>')
+keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 
 local opts = { noremap = true, silent = true }
 keymap("n", "grd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)

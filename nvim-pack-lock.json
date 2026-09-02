@@ -9,16 +9,16 @@
       "src": "https://github.com/R-nvim/R.nvim"
     },
     "blink.cmp": {
-      "rev": "327fff9",
+      "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
     "cynosure.nvim": {
-      "rev": "29d7437ae2226a4d6131efb901b0b7e949debba0",
+      "rev": "724190a46dcc28e875aa35bd728734a5ba7b2ec8",
       "src": "https://github.com/GillisC/cynosure.nvim"
     },
     "fzf-lua": {
-      "rev": "a8458b7",
+      "rev": "fea9eedc6894c44d44cbb772a5cd11c93b82d7a1",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "git-conflict.nvim": {
@@ -26,11 +26,11 @@
       "src": "https://github.com/akinsho/git-conflict.nvim"
     },
     "gitsigns.nvim": {
-      "rev": "20ad441",
+      "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "mason.nvim": {
-      "rev": "ad7146a",
+      "rev": "bb639d4bf385a4d89f478b83af4d770be05ab7eb",
       "src": "https://github.com/mason-org/mason.nvim"
     }
   }
