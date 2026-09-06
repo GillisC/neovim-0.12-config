@@ -5,7 +5,7 @@ return {
         "-e",
         "languageserver::run()"
     },
-    filetypes = { "r" },
+    filetypes = { "r", "qmd", "Rmd" },
     root_markers = {
         ".git",
         ".Rproj.user",

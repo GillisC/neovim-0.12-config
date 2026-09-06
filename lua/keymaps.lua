@@ -38,3 +38,62 @@ keymap("n", "<Leader>e", "<cmd>Ex %:p:h<CR>")
 keymap("n", "<Leader>ff", "<cmd>FzfLua files<CR>")
 keymap("n", "<Leader>fg", "<cmd>FzfLua live_grep<CR>")
 
+keymap("n", "<Leader>ch" , function()
+    local curr_file = vim.fn.expand("%:p")
+    vim.fn.system("chmod +x " .. curr_file)
+    print("file permissions: " .. vim.fn.system("ls -l " .. curr_file))
+end)
+
+local compilation_buf = nil
+local compilation_job = nil
+
+local function create_compilation_terminal()
+    vim.cmd("leftabove vsplit")
+    vim.cmd("enew")
+
+    compilation_buf = vim.api.nvim_get_current_buf()
+
+    vim.api.nvim_buf_set_name(compilation_buf, "Compilation")
+
+    compilation_job = vim.fn.jobstart({
+        "bash",
+        "--noprofile",
+        "--norc",
+    }, {
+        term = true,
+        env = {
+            PS1 = "",
+        },
+    })
+end
+
+keymap("n", "<Leader>ma", function()
+    local source_win = vim.api.nvim_get_current_win()
+
+    -- Compilation terminal doesn't exist yet
+    if compilation_buf == nil or not vim.api.nvim_buf_is_valid(compilation_buf) then
+        create_compilation_terminal()
+    else
+        -- Compilation buffer exists, but its window is closed
+        local win = vim.fn.bufwinnr(compilation_buf)
+
+        if win == -1 then
+            vim.cmd("leftabove vsplit")
+            vim.api.nvim_win_set_buf(0, compilation_buf)
+        else
+            -- Compilation window already exists
+            vim.api.nvim_set_current_win(vim.fn.win_getid(win))
+        end
+    end
+
+    -- Run make in the persistent shell
+    vim.fn.chansend(compilation_job,
+        "clear; make; status=$?; if [ $status -eq 0 ]; then echo; printf '\\033[32mCompilation successful!\\033[0m\\n'; else echo; printf '\\033[31mCompilation failed!\\033[0m\\n'; fi\n"
+    )
+
+    -- Return to the source window
+    vim.api.nvim_set_current_win(source_win)
+end)
+
+keymap("n", "<C-j>", "<cmd>cnext<CR>")
+keymap("n", "<C-k>", "<cmd>cprev<CR>")
