@@ -24,6 +24,7 @@ opt.undofile = true
 opt.completeopt = { "menuone", "popup", "noinsert" }
 opt.winborder = "rounded"
 opt.hlsearch = false
+opt.formatoptions:remove("o")
 
 vim.g.netrw_liststyle = 1
 vim.g.netrw_sort_by = "size"
